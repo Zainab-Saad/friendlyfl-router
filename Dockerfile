@@ -34,4 +34,4 @@ RUN dos2unix ./entrypoint.sh
 
 ENTRYPOINT [ "./entrypoint.sh" ]
 
-# CMD cron && poetry run python3 manage.py runserver 0.0.0.0:8000
+CMD cron && poetry run python3 manage.py runserver 0.0.0.0:8000

@@ -33,3 +33,5 @@ ENV PYTHONPATH "${PYTHONPATH}:/usr/local/lib/python3.10/site-packages"
 RUN dos2unix ./entrypoint.sh
 
 ENTRYPOINT [ "./entrypoint.sh" ]
+
+CMD cron && poetry run python3 manage.py runserver 0.0.0.0:8000
